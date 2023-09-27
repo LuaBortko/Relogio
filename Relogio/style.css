@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;  /* altura da tela inteira */
+    background: linear-gradient(120deg,#ffe53bd8,#ff2525da);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.relo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0,0,0, 0.5); /*Só definindo a opacidade já que rgb são a quantidade de mistura das cores azul vermelho verde*/
+}
+.relo div{       /* envolve todas as div dentro de relo */
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;   /* um elemento embaixo do outro*/
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5,5,5,0.9);
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.7);
+    border-radius: 7px;
+    letter-spacing: 3px;  /*Espaço entre as letras*/
+}
+.relo span {  /*envolve todos os span dentro de relo */
+    font-weight: bolder;
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+}
+.relo span.tempo{  /*envolve todos os span com classe tempo dentro de relo */
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+#ah{
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-shadow: 3px 2px 5px rgba(0,0,0,0.5);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    /*Degrade*/
+    background-image: linear-gradient(to left, red,orangered);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.gif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#giff{
+    position: absolute;
+    right: 300px;
+    top: 80px;
+}
